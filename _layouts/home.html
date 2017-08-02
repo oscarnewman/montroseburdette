@@ -17,7 +17,7 @@ layout: default
         <ul>
           {% assign featured = site.projects | where: 'featured', true | sort: 'featured-priority' %}
           {% for proejct in featured %}
-            <li><a href={{ "projects/" | append: proejct.slug | relative_url }}>{{ proejct.short-name }}</a></li>
+            <li><a href={{ "projects/" | append: proejct.slug | relative_url }}>{{ proejct.title }}</a></li>
           {% endfor %}
           <li><a href={{ "projects/" | relative_url }} class="cta">See all &raquo;</a></li>
         </ul>
