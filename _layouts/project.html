@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<header class="project-header" style="background-image: linear-gradient(0deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('{{ page.featured-image | absolute_url }} ')">
+
+  <div class="contain-wide">
+
+    {% include nav.html %}
+
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.description }}</p>
+
+  </div>
+
+</header>
+
+
+<section class="project-info">
+  <div class="content">
+  <div class="left">
+    <h2>Info</h2>
+    <ul>
+      <li><i class="fa fa-map"></i> {{ page.address }}</li>
+      <li><i class="fa fa-bed"></i> {{ page.beds }}</li>
+      <li><i class="fa fa-bath"></i> {{ page.baths }}</li>
+    </ul>
+  </div>
+
+  <div class="right">
+    <div class="content">
+      <h2>Partners</h2>
+      <ul>
+        {% for partner in page.partners %}
+          <li><a href={{ partner.url }}>{{ partner.name }}</a>, {{ partner.role }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  </div>
+</section>
+
+<div class="gal contain-wide">
+  <h2>Gallery</h2>
+  {% capture large %}{{ "_large" }}{% endcapture %}
+  {% capture path %}{{ page.images }}{% endcapture %}
+  {% include gallery.html %}
+</div>

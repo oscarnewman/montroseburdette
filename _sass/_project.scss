@@ -1,0 +1,88 @@
+.project-header {
+  $text-width: 500px;
+  background: #3d3d3d;
+  margin: 0;
+  text-align: left;
+  margin-bottom: 50px;
+
+  background-size: cover;
+  background-position: center;
+
+  @include clearfix();
+
+  h1, p.lead {
+    max-width: $text-width;
+  }
+
+  h1 {
+    margin-top: 300px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: none;
+  }
+
+  p.lead {
+    color: white;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.project-info {
+
+  max-width: 960px;
+  margin: auto;
+  margin-bottom: 0px;
+  padding: 0 30px;
+
+  .left {
+    text-align: left;
+    margin-bottom: 50px;
+
+    li {
+      color: transparentize($text-color, .3);
+    }
+
+    i.fa {
+      color: $primary-color;
+      margin-right: 10px;
+    }
+  }
+
+  .right {
+    text-align: left;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: 600px) {
+    margin-bottom: 50px;
+
+    @include grid-container();
+
+    > .content {
+      @include grid-collapse;
+    }
+
+    .left, .right {
+      @include grid-column(6);
+    }
+
+    .left {
+      margin-bottom: 0;
+    }
+
+    .right {
+      text-align: right;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.gal h2 {
+  margin-bottom: 15px;
+}

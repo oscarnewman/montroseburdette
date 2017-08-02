@@ -1,0 +1,166 @@
+/*
+ * Home Page
+ * =========
+ */
+
+html {
+  font-family: "proxima-nova", "Proxima Nova", "Helvetica Neue", "Helvetica", sans-serif;
+  color: $text-color;
+
+}
+
+::selection {
+  background: lighten($primary-color, 30%); /* WebKit/Blink Browsers */
+  color: darken($primary-color, 40%);
+}
+
+::-moz-selection {
+  background: lighten($primary-color, 30%);
+  color: darken($primary-color, 40%);
+}
+
+
+.contain {
+  max-width: 780px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.contain-wide {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.contain-full {
+  width: 100%;
+  padding: 0 30px;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+
+  &:hover {
+    color: lighten($primary-color, 10%);
+  }
+
+  &.cta {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+
+
+header {
+  text-align: center;
+  margin-top: $vertical-margin;
+  margin-bottom: 80px;
+}
+
+// SVG Logo
+g#Group {
+  fill: $primary-color;
+}
+
+h1 {
+  color: $primary-color;
+
+  font-size: 24px;
+  font-weight: 200;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+main {
+  margin-bottom: 80px;
+
+  @include clearfix;
+}
+
+.left {
+  text-align: center;
+}
+
+.left > p {
+
+  font-size: 24px;
+  font-weight: 200;
+
+  margin-bottom: 20px;
+
+  > strong {
+    font-weight: 600;
+  }
+
+}
+
+.right {
+  text-align: center;
+  margin-top: 80px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 15px;
+
+  }
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+a.email {
+  font-size: 18px;
+  font-weight: 200;
+
+  @media (min-width: 350px) {
+    font-size: 22px;
+  }
+
+  @media (min-width: 400px) {
+    font-size: 25px;
+  }
+}
+
+
+
+@media (min-width: 600px) {
+  .left, .right {
+    width: 50%;
+    float: left
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .right {
+
+    margin: 0;
+    text-align: right;
+
+    > .content {
+      float: right;
+    }
+  }
+
+  a.email {
+    font-size: 36px;
+  }
+}

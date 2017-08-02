@@ -1,0 +1,16 @@
+{% if large  %}
+<section class="gallery-pack _large">
+{% else %}
+<section class="gallery-pack">
+{% endif %}
+  <div class="grid-size"></div>
+  <div class="gutter-size"></div>
+  {% for image in site.static_files %}
+      {% if image.path contains path and image.path contains 'thumb' %}
+          {% capture url %} {{ image.path | replace: '.thumb', ''  }} {% endcapture %}
+          <a href={{ image.path | replace: '.thumb', '' | absolute_url }} class="image" data-size="{% dim url %}">
+            <img src={{ image.path | absolute_url }} alt="{{width}}">
+          </a>
+      {% endif %}
+  {% endfor %}
+</section>

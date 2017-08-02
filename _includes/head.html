@@ -1,0 +1,30 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <script src="https://use.typekit.net/mrx5luk.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <script src="https://use.fontawesome.com/8d4ace70cf.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href={{ "favicon-32x32.png" | absolute_url }}>
+    <link rel="icon" type="image/png" sizes="16x16" href={{ "favicon-16x16.png" | absolute_url }}>
+    <link rel="mask-icon" href={{ "/safari-pinned-tab.svg" | absolute_url}} color="#A5B893">
+    <meta name="theme-color" content="#A5B893">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href={{ "css/app.css" | absolute_url }}>
+    <!-- endbuild -->
+    <link rel="stylesheet" href={{ "vendor/photoswipe/photoswipe.css" | absolute_url }}>
+    <link rel="stylesheet" href={{ "vendor/photoswipe/default-skin/default-skin.css" | absolute_url}}>
+
+  </head>
