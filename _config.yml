@@ -19,9 +19,12 @@ email: questions@montroseburdette.com
 description: > # this means to ignore newlines until "baseurl:"
   Austin, Texas based design and concepting focusing on residential and commerical spaces.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://montroseburdette.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: "pretty"
+
+# for github pages, since we can't use their build due to the custom tag
+destination: docs/
 
 # Build settings
 include: ['_pages']
