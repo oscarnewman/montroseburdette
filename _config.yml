@@ -27,7 +27,6 @@ permalink: "pretty"
 destination: docs/
 
 # Build settings
-include: ['_pages']
 markdown: kramdown
 kramdown:
   input: GFM

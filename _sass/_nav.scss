@@ -16,6 +16,7 @@
       }
     }
 
+
   }
 
 
@@ -37,6 +38,13 @@
         font-weight: 200;
         font-size: 16px;
       }
+    }
+  }
+
+  &.-dark {
+    ul li a, a .logo, a .logo #Group {
+      color: $primary-color;
+      fill: $primary-color;
     }
   }
 }

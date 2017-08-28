@@ -1,0 +1,4 @@
+.projects-list {
+  @include grid-container;
+  @include grid-collapse;
+}

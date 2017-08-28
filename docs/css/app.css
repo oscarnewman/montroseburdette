@@ -648,3 +648,39 @@ a.email {
         color: white;
         font-weight: 200;
         font-size: 16px; }
+  .nav.-dark ul li a, .nav.-dark a .logo, .nav.-dark a .logo #Group {
+    color: #A5B893;
+    fill: #A5B893; }
+
+.project-thumb {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 30px;
+  background: #A5B893;
+  background-size: cover;
+  background-position: center;
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
+  @media (min-width: 650px) {
+    .project-thumb {
+      width: calc(50% - 30px);
+      float: left;
+      margin-left: 20px; } }
+  .project-thumb h2 {
+    padding-top: 50%;
+    margin: 0;
+    text-transform: none;
+    color: white;
+    font-weight: 600;
+    font-size: 24px; }
+
+.projects-list {
+  margin-left: -20px;
+  margin-right: -20px;
+  width: calc(100% + 40px); }
+  .projects-list::after {
+    clear: both;
+    content: "";
+    display: block; }

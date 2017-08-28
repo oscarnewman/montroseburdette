@@ -1,3 +1,19 @@
 ---
 layout: default
 ---
+
+<div class="contain">
+    {% include nav-dark.html %}
+
+    <div class="projects-list">
+        {% assign projects = site.projects | sort: 'listing-priority' %}
+        {% for project in projects %}
+        <a  href={{ "projects/" | append: project.slug | relative_url }}
+            class="project-thumb"
+            style="background-image: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url('{{ project.featured-image | relative_url }} ')">
+            <h2 >{{ project.title }}</h2>
+        </a>
+        {% endfor %}
+    </div>
+
+</div>

@@ -14,8 +14,8 @@ partners:
 featured: true
 featured-priority: 3
 listing-priority: 3
-featured-image: images/projects/drake/gallery1.jpg
+featured-image: images/projects/park-ln/gallery-1.jpg
 description: A modern twist on a classic 19th century farmhouse.
-images: images/projects/drake
+images: images/projects/park-ln
 layout: project
 ---

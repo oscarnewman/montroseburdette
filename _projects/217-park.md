@@ -20,8 +20,8 @@ partners:
 featured: false
 featured-priority: 0
 listing-priority: 4
-featured-image: images/projects/drake/gallery1.jpg
+featured-image: images/projects/217/gallery1.jpg
 description: A modern twist on a classic 19th century farmhouse.
-images: images/projects/drake
+images: images/projects/217
 layout: project
 ---

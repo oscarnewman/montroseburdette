@@ -1,0 +1,25 @@
+.project-thumb {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 30px;
+  background: $primary-color;
+
+  background-size: cover;
+  background-position: center;
+
+  @include grid-column(12);
+
+  @media (min-width: 650px) {
+    @include grid-column(6);
+  }
+
+  h2 {
+    padding-top: 50%;
+    margin: 0;
+    text-transform: none;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
