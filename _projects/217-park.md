@@ -10,12 +10,6 @@ partners:
   - name: Derek Demere
     url: "#"
     role: Design and Build
-  - name: Chris Goyer
-    url: "#"
-    role: Goyock, LLC - Finance Partner
-  - name: Will Steakley
-    url: ""
-    role: Realtor
 
 featured: false
 featured-priority: 0
