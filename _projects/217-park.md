@@ -8,11 +8,11 @@ beds: 2 Beds
 baths: 4 Baths
 partners:
   - name: Derek Demere
-    url: "http://google.com"
+    url: "#"
     role: Design and Build
   - name: Chris Goyer
-    url: "http://google.com"
-    role: Blood Money
+    url: "#"
+    role: Goyock, LLC - Finance Partner
   - name: Will Steakley
     url: ""
     role: Realtor

@@ -8,14 +8,8 @@ beds: 5 Beds
 baths: 3.5 Baths
 partners:
   - name: Derek Demere
-    url: "http://google.com"
+    url: "#"
     role: Design and Build
-  - name: Chris Goyer
-    url: "http://google.com"
-    role: Blood Money
-  - name: Will Steakley
-    url: ""
-    role: Realtor
 
 featured: true
 featured-priority: 3

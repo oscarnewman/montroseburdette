@@ -12,7 +12,7 @@ partners:
     role: Design and Build
   - name: Chris Goyer
     url: "http://google.com"
-    role: Blood Money
+    role: Goyock, LLC - Finance Partner
   - name: Will Steakley
     url: ""
     role: Realtor
